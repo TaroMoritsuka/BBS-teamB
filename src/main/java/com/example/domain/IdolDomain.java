@@ -1,10 +1,10 @@
 package com.example.domain;
 
-public class domain {
+public class IdolDomain {
 	private Integer id;
 	private String name;
 	private Integer age;
-	private String birthplace;
+	private String birthPlace;
 
 	/**
 	 * @return the id
@@ -51,37 +51,36 @@ public class domain {
 	/**
 	 * @return the birthplace
 	 */
-	public String getBirthplace() {
-		return birthplace;
+	public String getBirthPlace() {
+		return birthPlace;
 	}
 
 	/**
 	 * @param birthplace the birthplace to set
 	 */
-	public void setBirthplace(String birthplace) {
-		this.birthplace = birthplace;
+	public void setBirthPlace(String birthPlace) {
+		this.birthPlace = birthPlace;
 	}
 
 	/*
-	 * (non-Javadoc)
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "domain [id=" + id + ", name=" + name + ", age=" + age + ", birthplace=" + birthplace + "]";
+		return "domain [id=" + id + ", name=" + name + ", age=" + age + ", birthPlace=" + birthPlace + "]";
 	}
 
-	public domain() {
+	public IdolDomain() {
 		super();
 	}
 
-	public domain(Integer id, String name, Integer age, String birthplace) {
+	public IdolDomain(Integer id, String name, Integer age, String birthPlace) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.age = age;
-		this.birthplace = birthplace;
+		this.birthPlace = birthPlace;
 	}
 
 }
