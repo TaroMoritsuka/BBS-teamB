@@ -4,7 +4,7 @@ create table idols (
   id integer primary key,
   name text not null,
   age integer not null,
-  birth_place text not null,
+  birth_place text not null
 );
 
 -- 従業員情報インサートデータ
