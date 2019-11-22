@@ -1,0 +1,14 @@
+
+-- 従業員情報テーブル
+create table idols (
+  id integer primary key,
+  name text not null,
+  age integer not null,
+  birth_place text not null,
+);
+
+-- 従業員情報インサートデータ
+insert into idols(id,name,age,birth_date)values(1,'白石麻衣',27,'群馬');
+insert into idols(id,name,age,birth_date)values(2,'齋藤飛鳥',21,'埼玉');
+insert into idols(id,name,age,birth_date)values(3,'生田絵梨花',22,'ドイツ');
+insert into idols(id,name,age,birth_date)values(4,'松村沙友理',27,'大阪');
