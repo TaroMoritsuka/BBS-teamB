@@ -27,11 +27,11 @@ public class IdolRepository {
 	private NamedParameterJdbcTemplate template;
 
 	
-	public List<IdolDomain> findById(int id) {
+	public IdolDomain findById(int id) {
 		String sql = "SELECT id,name,age,birth_place FROM idols WHERE id=:id ORDER BY age DESC;";
 		SqlParameterSource param = new MapSqlParameterSource().addValue("id", id);
-		List<IdolDomain> IdleList = template.query(sql, param, IDOLDOMAIN_ROW_MAPPER);
-		return IdleList;
+		return template.queryForObject(sql, param, IDOLDOMAIN_ROW_MAPPER);
+
 
 	}
 	
